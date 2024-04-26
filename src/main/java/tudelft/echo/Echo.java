@@ -45,7 +45,7 @@ public class Echo {
 
         // handle the -n flag, if present as first argument.
         if (!operands.isEmpty()) {
-            if (operands.get(0).equals("-n")) {
+            if ("-n".equals(operands.get(0))) {
                 trailingNewLine = false;
                 operands.remove(0);
             }
